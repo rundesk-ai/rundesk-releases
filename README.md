@@ -46,7 +46,7 @@ no moving your code.
 Rundesk is free and needs macOS 13.3 or later on Apple Silicon. It updates itself when you open it.
 
 **Your work stays on your Mac.** Projects, settings and terminal history are stored locally. Rundesk
-has no account, no analytics and no tracking. Read the [Privacy Policy](https://rundesk.app/privacy).
+has no account and never sends your code, prompts or what your terminals show. Read the [Privacy Policy](https://rundesk.app/privacy).
 
 ## Tell us what you think
 
