@@ -2,10 +2,7 @@
   <a href="https://rundesk.app"><img src=".github/rundesk.png" alt="Rundesk, the control room for coding agents" width="100%"></a>
 </p>
 
-<h1 align="center">Rundesk</h1>
-
 <p align="center">
-  <b>The control room for coding agents.</b><br>
   Run Claude Code, Codex and other agents across all your projects, with their terminals, prompts and schedules in one window.
 </p>
 
@@ -17,12 +14,6 @@
   <a href="https://github.com/rundesk-ai/rundesk-releases/releases">Release notes</a>
   &nbsp;·&nbsp;
   <a href="#tell-us-what-you-think">Share feedback</a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/rundesk-ai/rundesk-releases/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/rundesk-ai/rundesk-releases?label=latest&color=d92334"></a>
-  <img alt="macOS 13.3 or later on Apple Silicon" src="https://img.shields.io/badge/macOS-13.3%2B%20·%20Apple%20Silicon-151518">
-  <img alt="Free" src="https://img.shields.io/badge/price-free-151518">
 </p>
 
 ---
