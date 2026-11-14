@@ -3,11 +3,13 @@
 </p>
 
 <p align="center">
-  Run Claude Code, Codex and other agents across all your projects, with their terminals, prompts and schedules in one window.
+  The control room for coding agents on macOS and Windows. Run Claude Code, Codex, OpenCode and more across your projects, with terminals, skills, prompts and schedules in one window.
 </p>
 
 <p align="center">
-  <a href="https://github.com/rundesk-ai/rundesk-releases/releases/latest"><b>Download for macOS</b></a>
+  <a href="https://github.com/rundesk-ai/rundesk-releases/releases/latest/download/Rundesk-macOS.dmg"><b>Download for macOS</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/rundesk-ai/rundesk-releases/releases/download/windows/Rundesk-Windows-setup.exe"><b>Download for Windows</b></a>
   &nbsp;·&nbsp;
   <a href="https://rundesk.app">Website</a>
   &nbsp;·&nbsp;
@@ -15,6 +17,9 @@
   &nbsp;·&nbsp;
   <a href="#tell-us-what-you-think">Share feedback</a>
 </p>
+
+Rundesk is free. Bring your own agent accounts, keep your editor, and work in your existing project
+folders. This repository is the home for downloads, release notes, bug reports and feature requests.
 
 ---
 
@@ -27,26 +32,49 @@ so you always know what is running, what is done and what needs you.
 | | |
 |---|---|
 | 🗂️ **Every client's work together** | Give each client a workspace with its projects, terminals and agents. Your side projects are a click away. Stay signed in to personal and work Claude or Codex accounts and pick the one each project needs. |
-| 🤝 **One agent builds, another reviews** | Let Claude hand a review to Codex, then bring the findings back. Both sessions stay with their project, and you decide what agents can access. |
-| 🖥️ **Terminals organized by project** | Dev servers, tests and SSH sessions sit with the code they belong to. Save commands and server notes for the next time you need them. |
-| 🔁 **Reusable prompts and schedules** | Turn the work you repeat into saved prompts: check for bugs, fix failing tests, review slow queries. Run them on demand or on a schedule. |
-| 📚 **Skills** | Teach agents how you build, with your standards for React, PostgreSQL, testing and more. Manage skills in one library and share them across projects. |
-| 🔔 **Know when to step in** | Get notified when work finishes or an agent needs an answer, in the app or through macOS notifications. Stop watching tabs. |
+| 🤝 **One agent builds, another reviews** | Let Claude hand a review to Codex, then bring the findings back. Agents can work together within a project or across projects, and you decide what they can access. |
+| 🖥️ **Terminals and notes together** | Keep dev servers, tests and SSH sessions with their projects. Save commands and connections, and keep setup instructions and server notes beside each terminal. |
+| 🔁 **Reusable prompts and schedules** | Save prompts for bug checks, test runs and code reviews. Run them on demand or on a schedule while Rundesk is open. |
+| 📚 **Skills and subagents** | Manage your instructions in one skill library, share them across projects, and install skill packages from GitHub. Define specialist subagents once and use them across supported agent CLIs. |
+| 🔌 **MCP integrations** | Connect local or remote MCP servers and link them to skills, so Claude Code, Codex and OpenCode get the tools and instructions their projects need. |
+| 🔔 **Know when to step in** | Get notified when work finishes or an agent needs an answer, in the app or through system notifications. Stop watching tabs. |
 
-**Works with the CLIs you already use:** Claude Code, Codex, Grok and Antigravity. Rundesk runs
-your installed agents with their existing accounts, in your own project folders. No new editor,
-no moving your code.
+**Works with the CLIs you already use:** Claude Code, Codex, OpenCode, Kimi Code, Grok and
+Antigravity. You can also add a custom agent command. Your agents use their own accounts and
+provider billing.
+
+## Coming in 0.35
+
+The next release brings notes to agent sessions and scheduled work:
+
+- **Agent notes beside the conversation.** Keep plans, decisions and progress in a note you can
+  read and edit. Agents can return to it after resuming or compacting their conversation.
+- **Shared notes between scheduled runs.** Keep what the next run needs in the schedule's note,
+  while each run has its own working note. Agents can update part of a note without rewriting it all.
+- **Schedules in your order.** Drag schedules into the order you want in each project.
+
+These features are upcoming. See the [release notes](https://github.com/rundesk-ai/rundesk-releases/releases)
+for what is available in each published version.
 
 ## Install
 
-1. [Download the latest DMG](https://github.com/rundesk-ai/rundesk-releases/releases/latest).
-2. Open it and drag **Rundesk** to **Applications**.
-3. Open Rundesk and add a project folder.
+| Platform | Download | Requirements |
+|---|---|---|
+| macOS | [Download the DMG](https://github.com/rundesk-ai/rundesk-releases/releases/latest/download/Rundesk-macOS.dmg) | macOS 13.3 or later, Apple Silicon |
+| Windows | [Download the installer](https://github.com/rundesk-ai/rundesk-releases/releases/download/windows/Rundesk-Windows-setup.exe) | Windows 10 (1809 or later) or Windows 11, x64 |
 
-Rundesk is free and needs macOS 13.3 or later on Apple Silicon. It updates itself when you open it.
+On macOS, open the DMG and drag **Rundesk** to **Applications**. On Windows, run the installer.
+Then open Rundesk, add a project folder, and start an agent or terminal.
 
-**Your work stays on your Mac.** Projects, settings and terminal history are stored locally. Rundesk
-has no account and never sends your code, prompts or what your terminals show. Read the [Privacy Policy](https://rundesk.app/privacy).
+Installed copies check for updates when opened. The Windows download can briefly be one version
+behind macOS while its build finishes.
+
+## Your work, on your computer
+
+Rundesk stores your setup, notes and saved terminal screens locally, with no Rundesk account required.
+It does not send us your code, prompts or terminal contents. Anonymous usage counts can be switched
+off in **Settings → About**. Your agents and connected services follow their providers' own policies.
+Read the [Privacy Policy](https://rundesk.app/privacy).
 
 ## Tell us what you think
 
