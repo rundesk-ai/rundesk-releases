@@ -3,35 +3,52 @@ description: Something in Rundesk is not working as it should.
 labels: ["bug"]
 body:
   - type: textarea
-    id: what
+    id: problem
     attributes:
-      label: What happened
-      description: What you saw, and what you expected instead.
+      label: Problem
+      description: What goes wrong, and what it costs you. One or two sentences.
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
       label: Steps to reproduce
-      description: The steps that make it happen, as far as you know them.
+      description: From opening Rundesk, one action per step. If you could not make it happen again, say so.
       placeholder: |
         1. Open …
         2. Click …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: What should have happened.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+      description: What happened instead, with any error message copied exactly. Screenshots help.
+    validations:
+      required: true
   - type: input
     id: version
     attributes:
       label: Rundesk version
       description: Filled in when you report from Settings → About.
-      placeholder: v0.4.0
+      placeholder: v0.34.0
     validations:
       required: true
   - type: input
     id: macos
     attributes:
-      label: macOS version
+      label: macOS or Windows version
+      description: Filled in when you report from Settings → About.
       placeholder: "15.4"
   - type: textarea
-    id: more
+    id: tested
     attributes:
-      label: Anything else
-      description: Screenshots, which agent or command was involved, how often it happens.
+      label: Tested
+      description: How often it happens, since when, and anything that changes it, such as which agent, project or command was involved.
