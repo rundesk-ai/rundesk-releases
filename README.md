@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  The control room for coding agents on macOS and Windows. Run Claude Code, Codex, OpenCode and more across your projects, with terminals, skills, prompts and schedules in one window.
+  The control room for coding agents on macOS and Windows. Run Claude Code, Codex, OpenCode and more across your projects, with terminals, notes, skills and schedules in one window.
 </p>
 
 <p align="center">
@@ -34,7 +34,8 @@ so you always know what is running, what is done and what needs you.
 | 🗂️ **Every client's work together** | Give each client a workspace with its projects, terminals and agents. Your side projects are a click away. Stay signed in to personal and work Claude or Codex accounts and pick the one each project needs. |
 | 🤝 **One agent builds, another reviews** | Let Claude hand a review to Codex, then bring the findings back. Agents can work together within a project or across projects, and you decide what they can access. |
 | 🖥️ **Terminals and notes together** | Keep dev servers, tests and SSH sessions with their projects. Save commands and connections, and keep setup instructions and server notes beside each terminal. |
-| 🔁 **Reusable prompts and schedules** | Save prompts for bug checks, test runs and code reviews. Run them on demand or on a schedule while Rundesk is open. |
+| 📝 **Context that carries forward** | Keep plans, decisions and progress in editable notes beside each agent session, ready to return to after a resume or compaction. Shared schedule notes carry context from one run to the next, and agents can update part of a note without rewriting it all. |
+| 🔁 **Reusable prompts and schedules** | Save prompts for bug checks, test runs and code reviews. Run them on demand or on a schedule while Rundesk is open, and drag schedules into the order you want. |
 | 📚 **Skills and subagents** | Manage your instructions in one skill library, share them across projects, and install skill packages from GitHub. Define specialist subagents once and use them across supported agent CLIs. |
 | 🔌 **MCP integrations** | Connect local or remote MCP servers and link them to skills, so Claude Code, Codex and OpenCode get the tools and instructions their projects need. |
 | 🔔 **Know when to step in** | Get notified when work finishes or an agent needs an answer, in the app or through system notifications. Stop watching tabs. |
@@ -42,19 +43,6 @@ so you always know what is running, what is done and what needs you.
 **Works with the CLIs you already use:** Claude Code, Codex, OpenCode, Kimi Code, Grok and
 Antigravity. You can also add a custom agent command. Your agents use their own accounts and
 provider billing.
-
-## Coming in 0.35
-
-The next release brings notes to agent sessions and scheduled work:
-
-- **Agent notes beside the conversation.** Keep plans, decisions and progress in a note you can
-  read and edit. Agents can return to it after resuming or compacting their conversation.
-- **Shared notes between scheduled runs.** Keep what the next run needs in the schedule's note,
-  while each run has its own working note. Agents can update part of a note without rewriting it all.
-- **Schedules in your order.** Drag schedules into the order you want in each project.
-
-These features are upcoming. See the [release notes](https://github.com/rundesk-ai/rundesk-releases/releases)
-for what is available in each published version.
 
 ## Install
 
