@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  The control room for coding agents on macOS and Windows. Run Claude Code, Codex, OpenCode and more across your projects, with terminals, notes, skills and schedules in one window.
+  Run coding agents across all your projects, and see at a glance which one is working and which needs you.
 </p>
 
 <p align="center">
@@ -11,71 +11,80 @@
   &nbsp;·&nbsp;
   <a href="https://github.com/rundesk-ai/rundesk-releases/releases/download/windows/Rundesk-Windows-setup.exe"><b>Download for Windows</b></a>
   &nbsp;·&nbsp;
-  <a href="https://rundesk.app">Website</a>
+  <a href="https://rundesk.app/docs">Docs</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/rundesk-ai/rundesk-releases/releases">Release notes</a>
-  &nbsp;·&nbsp;
-  <a href="#tell-us-what-you-think">Share feedback</a>
 </p>
 
-Rundesk is free. Bring your own agent accounts, keep your editor, and work in your existing project
-folders. This repository is the home for downloads, release notes, bug reports and feature requests.
+Rundesk is a free desktop app for macOS and Windows. It launches the coding agent CLIs you already
+use, signed in to your own accounts, in your project folders, and works alongside the editor you already have. Each project's terminals,
+commands, prompts and schedules sit beside its agents. Six agents are built in: Claude Code, Codex, OpenCode,
+Grok, Antigravity and Kimi Code, and you can add any other command as a custom agent. Each
+provider's own billing applies.
 
----
-
-## Why Rundesk
-
-Coding agents are fast, but running several of them across several projects turns into a wall of
-terminal tabs. Rundesk gives each project a home: its agents, terminals and commands side by side,
-so you always know what is running, what is done and what needs you.
-
-| | |
-|---|---|
-| 🗂️ **Every client's work together** | Give each client a workspace with its projects, terminals and agents. Your side projects are a click away. Stay signed in to personal and work Claude or Codex accounts and pick the one each project needs. |
-| 🤝 **One agent builds, another reviews** | Let Claude hand a review to Codex, then bring the findings back. Agents can work together within a project or across projects, and you decide what they can access. |
-| 🖥️ **Terminals and notes together** | Keep dev servers, tests and SSH sessions with their projects. Save commands and connections, and keep setup instructions and server notes beside each terminal. |
-| 📝 **Context that carries forward** | Keep plans, decisions and progress in editable notes beside each agent session, ready to return to after a resume or compaction. Shared schedule notes carry context from one run to the next, and agents can update part of a note without rewriting it all. |
-| 🔁 **Reusable prompts and schedules** | Save prompts for bug checks, test runs and code reviews. Run them on demand or on a schedule while Rundesk is open, and drag schedules into the order you want. |
-| 📚 **Skills and subagents** | Manage your instructions in one skill library, share them across projects, and install skill packages from GitHub. Define specialist subagents once and use them across supported agent CLIs. |
-| 🔌 **MCP integrations** | Connect local or remote MCP servers and link them to skills, so Claude Code, Codex and OpenCode get the tools and instructions their projects need. |
-| 🔔 **Know when to step in** | Get notified when work finishes or an agent needs an answer, in the app or through system notifications. Stop watching tabs. |
-
-**Works with the CLIs you already use:** Claude Code, Codex, OpenCode, Kimi Code, Grok and
-Antigravity. You can also add a custom agent command. Your agents use their own accounts and
-provider billing.
+This repository is where Rundesk's installers and release notes are published, and where you
+report a bug or ask for a feature.
 
 ## Install
 
-| Platform | Download | Requirements |
+| | macOS | Windows |
 |---|---|---|
-| macOS | [Download the DMG](https://github.com/rundesk-ai/rundesk-releases/releases/latest/download/Rundesk-macOS.dmg) | macOS 13.3 or later, Apple Silicon |
-| Windows | [Download the installer](https://github.com/rundesk-ai/rundesk-releases/releases/download/windows/Rundesk-Windows-setup.exe) | Windows 10 (1809 or later) or Windows 11, x64 |
+| Download | [Rundesk-macOS.dmg](https://github.com/rundesk-ai/rundesk-releases/releases/latest/download/Rundesk-macOS.dmg) | [Rundesk-Windows-setup.exe](https://github.com/rundesk-ai/rundesk-releases/releases/download/windows/Rundesk-Windows-setup.exe) |
+| Versions | macOS 13.3 or later | Windows 10 version 1809 or later, or Windows 11 |
+| Hardware | Apple silicon | 64-bit (x64) |
 
-On macOS, open the DMG and drag **Rundesk** to **Applications**. On Windows, run the installer.
-Then open Rundesk, add a project folder, and start an agent or terminal.
+Both links always give you the latest version. You also need at least one coding agent CLI, such as
+Claude Code or Codex, signed in with your own account.
 
-Installed copies check for updates when opened. The Windows download can briefly be one version
-behind macOS while its build finishes.
+**On macOS,** open the DMG and drag Rundesk to Applications. The DMG is signed with a Developer ID and
+notarized by Apple, so it opens even when you are offline.
 
-## Your work, on your computer
+**On Windows,** run the installer. It installs Rundesk for you alone, with no administrator needed,
+and fetches WebView2 if it is missing. The installer is not code-signed, and each release reaches
+Windows once its Windows build is added, which can be later than the Mac build.
 
-Rundesk stores your setup, notes and saved terminal screens locally, with no Rundesk account required.
-It does not send us your code, prompts or terminal contents. Anonymous usage counts can be switched
-off in **Settings → About**. Your agents and connected services follow their providers' own policies.
-Read the [Privacy Policy](https://rundesk.app/privacy).
+Then open Rundesk, choose **Create workspace**, and add a project folder with **Add project**. The
+[Quick start](https://rundesk.app/docs/quick-start) takes you from there to your first agent.
 
-## Tell us what you think
+## Updates
 
-Rundesk is young and shaped by the people who use it. Every issue is read, and your feedback
-decides what comes next.
+Once installed, Rundesk updates itself. It looks for a newer release at every launch and while it is
+open. At launch it installs the update at once; while you work, an update icon appears at the foot of
+the rail, and Rundesk waits for you to choose **Restart and update**, since updating stops your
+running commands, agents and terminals. A download that is not signed by Rundesk is refused.
 
-- 🐞 **Something broken?** [Report a bug](https://github.com/rundesk-ai/rundesk-releases/issues/new?template=bug_report.yml). Reporting from Rundesk’s **Settings → About** fills in your version for you; the steps to reproduce it help most.
-- 💡 **Missing something?** [Request a feature](https://github.com/rundesk-ai/rundesk-releases/issues/new?template=feature_request.yml). Tell us the problem you are trying to solve, not only the fix you have in mind.
-- 👍 **Want something that is already asked for?** Add a 👍 to [the open issues](https://github.com/rundesk-ai/rundesk-releases/issues). We use them to decide what to build first.
-- 👀 **Follow along.** Watch this repository for releases (Watch → Custom → Releases) to hear about each new version.
-- ⭐ **Like it?** Star the repository and tell a friend who runs coding agents. It helps more than you think.
+[Releases](https://github.com/rundesk-ai/rundesk-releases/releases) lists what changed in each
+version. To hear about each one, watch this repository for releases (**Watch › Custom › Releases**).
 
-Issues are public, so please leave passwords, keys and private code out of them.
+## Docs
+
+[rundesk.app/docs](https://rundesk.app/docs) covers every part of Rundesk: workspaces and projects,
+agents, terminals and commands, skills, schedules, integrations and settings.
+
+## Report a bug or ask for a feature
+
+The quickest way is from Rundesk itself: **Settings › About** has **Report a bug** and **Request a
+feature**, which open the form in your browser with your Rundesk version filled in. You submit it
+under your own GitHub account.
+
+- [Report a bug](https://github.com/rundesk-ai/rundesk-releases/issues/new?template=bug_report.yml):
+  what went wrong, the steps that make it happen, what you expected and what happened instead.
+  The steps help most.
+- [Request a feature](https://github.com/rundesk-ai/rundesk-releases/issues/new?template=feature_request.yml):
+  the problem you are trying to solve, what you want to be able to do, and how you would know it
+  is done.
+
+Before you file one, look through [the open issues](https://github.com/rundesk-ai/rundesk-releases/issues).
+If yours is there, add a 👍 to it: the votes decide what gets built first.
+
+Issues are public, so leave passwords, keys and private code out of them.
+
+## Privacy
+
+Rundesk runs on your computer, and your agents run with your own CLIs and accounts. About the app
+itself, Rundesk sends two kinds of data: anonymous usage counts, which never carry a name, a path, a
+prompt or any output, and crash reports. You can switch off either one under **Privacy** in
+**Settings › About**. The [Privacy Policy](https://rundesk.app/privacy) lists what each one holds.
 
 ---
 
