@@ -2,11 +2,16 @@ name: Bug report
 description: Something in Rundesk is not working as it should.
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Each box has an example to show what helps most; replace it with what you saw. Issues are public, so leave out anything private, such as keys, paths with your name in them or client code.
   - type: textarea
     id: problem
     attributes:
       label: Problem
       description: What goes wrong, and what it costs you. One or two sentences.
+      placeholder: When I stop a dev server from the sidebar, it keeps running and holds port 3000, so I can't start it again without quitting Rundesk.
     validations:
       required: true
   - type: textarea
@@ -15,8 +20,10 @@ body:
       label: Steps to reproduce
       description: From opening Rundesk, one action per step. If you could not make it happen again, say so.
       placeholder: |
-        1. Open …
-        2. Click …
+        1. Open Rundesk and pick the "api" project.
+        2. Start the "dev" command in the sidebar.
+        3. Right-click it and choose Stop.
+        4. Start it again.
     validations:
       required: true
   - type: textarea
@@ -24,6 +31,7 @@ body:
     attributes:
       label: Expected
       description: What should have happened.
+      placeholder: The command stops, and starting it again works.
     validations:
       required: true
   - type: textarea
@@ -31,6 +39,7 @@ body:
     attributes:
       label: Actual
       description: What happened instead, with any error message copied exactly. Screenshots help.
+      placeholder: 'It shows as stopped, but starting it again fails with "Error: listen EADDRINUSE :::3000".'
     validations:
       required: true
   - type: input
@@ -38,7 +47,7 @@ body:
     attributes:
       label: Rundesk version
       description: Filled in when you report from Settings → About.
-      placeholder: v0.34.0
+      placeholder: v0.47.1
     validations:
       required: true
   - type: input
@@ -46,9 +55,10 @@ body:
     attributes:
       label: macOS or Windows version
       description: Filled in when you report from Settings → About.
-      placeholder: "15.4"
+      placeholder: "macOS 15.4, or Windows 11"
   - type: textarea
     id: tested
     attributes:
       label: Tested
       description: How often it happens, since when, and anything that changes it, such as which agent, project or command was involved.
+      placeholder: Every time since v0.46.0, only with commands that start a Node server. Quitting Rundesk frees the port.

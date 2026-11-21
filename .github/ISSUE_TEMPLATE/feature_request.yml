@@ -2,11 +2,16 @@ name: Feature request
 description: Something Rundesk could do, or do better.
 labels: ["enhancement"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Tell us what gets in your way, not only the fix you have in mind, so we can find the best way to solve it. Each box has an example; replace it with your own.
   - type: textarea
     id: problem
     attributes:
       label: Problem
       description: What is missing or gets in your way today, what it costs you, and any workaround you use now.
+      placeholder: I run agents in five projects, and switching between them means scrolling the sidebar and clicking each time. Right now I use the mouse for every switch.
     validations:
       required: true
   - type: textarea
@@ -14,6 +19,7 @@ body:
     attributes:
       label: Goal
       description: What would be true for you once Rundesk handles it. One sentence.
+      placeholder: I can jump to any project, and any of its agents or files, without touching the mouse.
     validations:
       required: true
   - type: textarea
@@ -21,9 +27,12 @@ body:
     attributes:
       label: Done when
       description: How you would check that it works for you, one point per line.
+      placeholder: |
+        - A key opens a project or one of its screens by name.
+        - I can get back to where I was just as fast.
   - type: input
     id: version
     attributes:
       label: Rundesk version
       description: Filled in when you ask from Settings → About.
-      placeholder: v0.34.0
+      placeholder: v0.47.1
