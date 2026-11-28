@@ -1,0 +1,35 @@
+# Labels a request filed from Rundesk's bell. Rundesk files through the person's own GitHub account,
+# and GitHub drops a label set by an account without push access, so the label is added here from
+# the headings Rundesk writes: "### What happened?" for a bug, "### What would you like Rundesk to
+# do?" for a feature. An issue that already has a label (one filed through a form) is left alone.
+name: Label requests
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const issue = context.payload.issue;
+            if (issue.labels.length > 0) return;
+            const body = issue.body ?? "";
+            const label = body.includes("### What happened?")
+              ? "bug"
+              : body.includes("### What would you like Rundesk to do?")
+                ? "enhancement"
+                : null;
+            if (!label) return;
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              labels: [label],
+            });
